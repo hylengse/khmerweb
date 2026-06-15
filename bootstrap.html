@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Framework</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container bg-info">
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="la.jpg"
+              alt="Los Angeles"
+              class="d-block"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="chicago.jpg"
+              alt="Chicago"
+              class="d-block"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="ny.jpg"
+              alt="New York"
+              class="d-block"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <br />
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-md-3">
+          <form action="">
+            Username:
+            <input type="text" name="" class="form-control" id="" />
+            Password:
+            <input type="password" name="" class="form-control" id="" />
+            <input type="submit" value="Login" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn btn-warning">Cancel</a>
+      <a href="https://beltei.edu.kh/" class="btn btn-primary" target="_blank"
+        >Beltei Site</a
+      >
+      <form action="abc.php" method="post">
+        ID: <input type="hidden" name="" value="12132" /> <br />
+        Username:
+        <input type="text" name="" class="form-control" /> <br />
+
+        Phone: <input type="text" name="" class="form-control" />
+        <input type="button" value="Add" />
+        <br /><br />
+        <div class="btn-group">
+          <input
+            type="submit"
+            value="Save"
+            class="btn btn-primary btn-lg disabled"
+          />
+          <input
+            type="button"
+            value="Save Too"
+            class="btn btn-danger btn-sm active"
+          />
+          <input
+            type="reset"
+            value="Clear"
+            class="btn btn-success btn-xs disabled"
+          />
+        </div>
+      </form>
+
+      <div class="alert alert-success alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Alert Message</strong>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/acer.png" class="rounded img-fluid" />
+        </div>
+      </div>
+      <div class="p-5 bg-danger text-white rounded-5">
+        <h1>Hello World...</h1>
+        <h2>Good Morning Everybody</h2>
+        <img src="img/acer.png" class="rounded" />
+        <img src="img/sting.png" class="rounded-circle" />
+        <img src="img/sting.png" class="img-thumbnail" />
+        <img src="img/sting.png" class="img-fluid" />
+      </div>
+      <!-- table -->
+      <div class="p-5 bg-info text-white rounded-5">
+        <table class="table table-hover table-responsive">
+          <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td>beltei-12021</td>
+            <td>Sovat</td>
+            <td>Male</td>
+            <td>098232323</td>
+            <td>sovat@gmail.com</td>
+            <td>Phnom Penh</td>
+          </tr>
+          <tr>
+            <td>beltei-12022</td>
+            <td>ChanLeak</td>
+            <td>Female</td>
+            <td>092123123</td>
+            <td>leak@gmail.com</td>
+            <td>Kompong Soum</td>
+          </tr>
+          <tr>
+            <td>beltei-12021</td>
+            <td>Sovat</td>
+            <td>Male</td>
+            <td>098232323</td>
+            <td>sovat@gmail.com</td>
+            <td>Phnom Penh</td>
+          </tr>
+          <tr>
+            <td>beltei-12022</td>
+            <td>ChanLeak</td>
+            <td>Female</td>
+            <td>092123123</td>
+            <td>leak@gmail.com</td>
+            <td>Kompong Soum</td>
+          </tr>
+          <tr>
+            <td>beltei-12021</td>
+            <td>Sovat</td>
+            <td>Male</td>
+            <td>098232323</td>
+            <td>sovat@gmail.com</td>
+            <td>Phnom Penh</td>
+          </tr>
+          <tr>
+            <td>beltei-12022</td>
+            <td>ChanLeak</td>
+            <td>Female</td>
+            <td>092123123</td>
+            <td>leak@gmail.com</td>
+            <td>Kompong Soum</td>
+          </tr>
+          <tr>
+            <td>beltei-12021</td>
+            <td>Sovat</td>
+            <td>Male</td>
+            <td>098232323</td>
+            <td>sovat@gmail.com</td>
+            <td>Phnom Penh</td>
+          </tr>
+          <tr>
+            <td>beltei-12022</td>
+            <td>ChanLeak</td>
+            <td>Female</td>
+            <td>092123123</td>
+            <td>leak@gmail.com</td>
+            <td>Kompong Soum</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="p-5 bg-info text-white rounded-5">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/HQ.png" class="img-fluid" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/BIU1.png" class="img-fluid" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/BIU2.png" class="img-fluid" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/BIU3.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 bg-info text-white rounded-5">
+        <h1>Content</h1>
+        <div class="row">
+          <div class="col-md-3 bg-primary">
+            Col-md-3
+            <p>This is a paragraph!</p>
+          </div>
+          <div class="col-md-6 bg-danger">
+            <table class="table table-striped table-hover table-responsive">
+              <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+              </tr>
+              <tr>
+                <td>beltei-12021</td>
+                <td>Sovat</td>
+                <td>Male</td>
+                <td>098232323</td>
+                <td>sovat@gmail.com</td>
+                <td>Phnom Penh</td>
+              </tr>
+              <tr>
+                <td>beltei-12022</td>
+                <td>ChanLeak</td>
+                <td>Female</td>
+                <td>092123123</td>
+                <td>leak@gmail.com</td>
+                <td>Kompong Soum</td>
+              </tr>
+              <tr>
+                <td>beltei-12021</td>
+                <td>Sovat</td>
+                <td>Male</td>
+                <td>098232323</td>
+                <td>sovat@gmail.com</td>
+                <td>Phnom Penh</td>
+              </tr>
+              <tr>
+                <td>beltei-12022</td>
+                <td>ChanLeak</td>
+                <td>Female</td>
+                <td>092123123</td>
+                <td>leak@gmail.com</td>
+                <td>Kompong Soum</td>
+              </tr>
+              <tr>
+                <td>beltei-12021</td>
+                <td>Sovat</td>
+                <td>Male</td>
+                <td>098232323</td>
+                <td>sovat@gmail.com</td>
+                <td>Phnom Penh</td>
+              </tr>
+              <tr>
+                <td>beltei-12022</td>
+                <td>ChanLeak</td>
+                <td>Female</td>
+                <td>092123123</td>
+                <td>leak@gmail.com</td>
+                <td>Kompong Soum</td>
+              </tr>
+              <tr>
+                <td>beltei-12021</td>
+                <td>Sovat</td>
+                <td>Male</td>
+                <td>098232323</td>
+                <td>sovat@gmail.com</td>
+                <td>Phnom Penh</td>
+              </tr>
+              <tr>
+                <td>beltei-12022</td>
+                <td>ChanLeak</td>
+                <td>Female</td>
+                <td>092123123</td>
+                <td>leak@gmail.com</td>
+                <td>Kompong Soum</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-3 bg-success">Col-md-3</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 bg-success">Content Left</div>
+        <div class="col-md-6 bg-light">Content Right</div>
+      </div>
+    </div>
+  </body>
+</html>

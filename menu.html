@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      nav {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+        height: 265px;
+        width: 150px;
+        border: 5px red solid;
+      }
+      nav a {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 13, 13);
+      }
+      nav a:hover {
+        color: white;
+        background-color: aqua;
+      }
+      ul {
+        list-style-type: none;
+      }
+      ul li {
+        float: left;
+        width: 150px;
+        height: auto;
+        line-height: 50px;
+        background-color: black;
+        border: 2px red solid;
+      }
+      ul ul {
+        display: none;
+        position: absolute;
+      }
+      ul li:hover #sub1 {
+        display: block;
+        width: 150px;
+        position: absolute;
+        height: auto;
+        margin-left: 152px;
+        top: 58px;
+      }
+      ul li li:hover #sub2 {
+        display: block;
+        width: 150px;
+        position: absolute;
+        height: auto;
+        margin-left: 150px;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">Product</a>
+          <ul id="sub1">
+            <li>
+              <a href="">Honda</a>
+              <ul id="sub2">
+                <li><a href="">Dream 125</a></li>
+                <li><a href="">Scoopy 125</a></li>
+              </ul>
+            </li>
+            <li><a href="">Suzuki</a></li>
+            <li><a href="">Kawasaki</a></li>
+          </ul>
+        </li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Map</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

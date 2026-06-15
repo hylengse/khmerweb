@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* #left_menu {
+        display: block;
+        width: 200px;
+        height: auto;
+        background-color: aqua;
+        padding: 10px;
+      } */
+      #left_menu a {
+        text-decoration: none;
+        color: tomato;
+      }
+      #left_menu ul li {
+        list-style-type: none;
+        padding: 10px;
+        display: block;
+        width: 150px;
+        height: auto;
+        text-align: center;
+        background-color: aqua;
+        border: 2px red solid;
+      }
+      #left_menu ul li:hover {
+        background-color: antiquewhite;
+        color: rgb(255, 8, 0);
+      }
+      .sub1,
+      .sub2 {
+        display: none;
+      }
+      #left_menu ul li:hover .sub1 {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+        top: 57px;
+      }
+      #left_menu ul li:hover .sub2 {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+        top: 98px;
+      }
+      .sub_sub1 {
+        display: none;
+      }
+      #left_menu .sub2 li:hover .sub_sub1 {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+        top: 40px;
+      }
+
+      #menu nav ul {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        display: flex; /* Aligns items horizontally */
+        background-color: blueviolet;
+      }
+
+      #menu nav li a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      #menu nav li a:hover {
+        background-color: #111;
+      }
+
+      #menu li ul {
+        display: none;
+        width: 180px;
+        background-color: blueviolet;
+        position: absolute;
+        text-align: center;
+      }
+
+      #menu nav li:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="left_menu">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Product</a>
+            <ul class="sub1">
+              <li><a href="">Dell</a></li>
+              <li><a href="">Acer</a></li>
+              <li><a href="">Asus</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Service</a>
+            <ul class="sub2">
+              <li><a href="">Computer Repair</a></li>
+              <li>
+                <a href="">Web Development</a>
+                <ul class="sub_sub1">
+                  <li><a href="">Web Design</a></li>
+                  <li><a href="">Web Application</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">Conctact</a></li>
+          <li><a href="">About</a></li>
+          <li>
+            <a href="">Site map</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menu">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Product</a>
+            <ul class="dropdown">
+              <li><a href="">Dell</a></li>
+              <li><a href="">Acer</a></li>
+              <li><a href="">Asus</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Service</a>
+            <ul class="dropdown">
+              <li><a href="">Computer Repair</a></li>
+              <li><a href="">Networking</a></li>
+              <li><a href="">Web solution</a></li>
+            </ul>
+          </li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About Us</a></li>
+          <li>
+            <a href="">Site map</a>
+            <ul class="dropdown">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Linkin</a></li>
+              <li><a href="">Youtube</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

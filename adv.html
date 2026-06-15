@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance CSS</title>
+    <style>
+      .with-scale {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        background-color: aqua;
+        margin: 50px;
+        text-align: center;
+        border: 2px red solid;
+      }
+      .with-scale:hover {
+        background-color: rgb(153, 255, 0);
+        /* transform: scale(150%); */
+        transform: scale(2, 1.5);
+      }
+      .div1 {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        background-color: aqua;
+        margin: 50px;
+        text-align: center;
+        border: 2px red solid;
+        transform: skewX(-20deg);
+      }
+      .div2 {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        background-color: aqua;
+        margin: 50px;
+        text-align: center;
+        border: 2px red solid;
+        transform: skewY(-20deg);
+      }
+      .div3 {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgb(171, 246, 246);
+        margin: 50px;
+        text-align: center;
+        border: 2px red solid;
+      }
+      .div3:hover {
+        transform: translate(10px, 10px);
+        /* transform: rotate(180deg); */
+      }
+      .main-div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 30px;
+        margin: 50px;
+        border: 2px dotted black;
+        text-align: center;
+      }
+      .main-div .multiple-transform {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgba(78, 235, 235, 0.5);
+        transition-delay: 5s;
+        transition-duration: 3s;
+        /* transition: transform 3s linear; */
+      }
+      .main-div .multiple-transform:hover {
+        transform: rotate(360deg) scale(1.5) skewY(-20deg);
+      }
+      img {
+        opacity: 0.7;
+        transition: transform 5s linear;
+      }
+      img:hover {
+        transform: rotate(360deg);
+      }
+      .demo1 {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgb(98, 255, 0);
+        margin: 50px;
+        text-align: center;
+        border: 2px red solid;
+        /* overflow: auto; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo1">
+      Increase Width and Height 120% Increase Width and Height 120% Increase
+      Width and Height 120% Increase Width and Height 120% Increase Width and
+      Height 120% Increase Width and Height 120%
+    </div>
+    <img src="img/msi.png" width="200" />
+    <div class="main-div">
+      <div class="multiple-transform"></div>
+    </div>
+
+    <br />
+
+    <div class="with-scale" id="demo">Increase Width and Height 120%</div>
+    <div class="div1">SkewX 20 deg</div>
+    <div class="div2">SkewY 20 deg</div>
+    <div class="div3">Translate 10px 10px</div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sc {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(131, 87, 30);
+        padding: 10px;
+        text-align: center;
+        margin: 200px;
+      }
+      .sc:hover {
+        background-color: brown;
+        /* transform: scale(2, 3); */
+        transform: translate(20px, 50px);
+      }
+      .div1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(131, 87, 30);
+        padding: 10px;
+        text-align: center;
+        margin: 100px;
+        /* transform: skewY(20deg); */
+        transform: translate(300%, 1000%);
+      }
+      .main-div {
+        width: 200px;
+        height: 200px;
+        padding: 30px;
+        border-radius: 50%;
+        margin-left: 100px;
+        border: 2px dotted black;
+        text-align: center;
+      }
+      .main-div .multiple-transform {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #117da9;
+        transition: transform 3s linear;
+      }
+      .main-div .multiple-transform:hover {
+        transform: rotate(360deg) scale(1.5) skewY(-20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example for CSS Multiple Transforms</h3>
+    <div class="main-div">
+      <div class="multiple-transform"></div>
+    </div>
+
+    <div class="sc">Increase Your knowlegde</div>
+    <div class="div1">SkeX</div>
+  </body>
+</html>
